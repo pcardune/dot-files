@@ -1,0 +1,21 @@
+[user]
+	name = Paul Carduner
+	email = paul@carduner.net
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[push]
+	default = simple
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	amend = commit -a --amend
+	undo = reset HEAD~1 --mixed
+	cm = commit -am
+	plus = commit -a --amend --no-edit
+	push-new = push -u origin HEAD
+[core]
+	excludesfile = /home/pcardune/.gitignore_global
