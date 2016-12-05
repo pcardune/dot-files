@@ -110,3 +110,6 @@ screen -t apps
 stuff "cd ~/code-dot-org/apps; npm start"
 screen -t test
 stuff "cd ~/code-dot-org/apps; WATCH=1 npm run test:unit"
+screen -t test-ui
+stuff "cd ~/code-dot-org; export DISPLAY=:1"
+stuff "rake test:ui feature=./dashboard/test/ui/features/"
