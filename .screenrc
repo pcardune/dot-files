@@ -106,6 +106,10 @@ screen -t emacs
 stuff "emacs ~/code-dot-org/apps/package.json"
 screen -t dashboard
 stuff "cd ~/code-dot-org; ./bin/dashboard-server"
+screen -t pegasus
+stuff "cd ~/code-dot-org./bin/pegasus-server"
+screen -t storybook
+stuff "cd ~/code-dot-org/apps; npm run storybook"
 screen -t apps
 stuff "cd ~/code-dot-org/apps; npm start"
 screen -t test
